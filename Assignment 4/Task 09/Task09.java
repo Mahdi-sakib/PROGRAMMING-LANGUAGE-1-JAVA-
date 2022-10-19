@@ -1,0 +1,17 @@
+public class Task09{
+    public static void main(String[]args){
+        int num=1,sum=0;
+        for( num=1;num<=600;num+=1){
+            if(num%7==0){
+                if(num%9==0){}
+                else{
+                    sum=sum+num;
+                }
+            }
+            else if(num%9==0){
+                sum=sum+num;
+            }
+        }
+        System.out.println(sum);
+    }
+}
