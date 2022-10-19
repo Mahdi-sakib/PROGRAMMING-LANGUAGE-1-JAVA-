@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Task16{
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter mark");
+        double n1=scan.nextDouble();
+        double count=1,max=n1,min=n1,sum=n1;
+        for( count=1;count<10;count+=1){
+            System.out.println("Enter mark");
+            double n=scan.nextDouble();
+            if (n>max){
+                max=n;
+            }
+            else
+                if(n<min){
+                min=n;
+            }
+            sum=sum+n;
+        }
+        double avg=sum/10;
+        System.out.println("Maximum="+max);
+        System.out.println("Minimum="+min);
+        System.out.println("Average="+avg);
+    }
+}
